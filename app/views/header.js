@@ -103,8 +103,8 @@ module.exports = Backbone.View.extend({
       var date = util.extractDate(name);
       var extension = name.split('.').pop();
 
-      path = parts.join('/') + '/' + date + '-' +
-        util.stringToUrl(value) + '.' + extension;
+      path = parts.join('/') +  util.stringToUrl(value) 
+        + '/' + date + '.' + extension;
 
       this.file.set('path', path);
     }
